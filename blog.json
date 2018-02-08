@@ -1,0 +1,46 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "date": "March 28, 2017",
+      "title": "It's Hard to Forego Efficiency",
+      "author": "James McLayer",
+      "body": "We live in a world of tradeoffs. Spending some time optimizing a certain function takes your focus and time away from optimizing another. We all want everything to work perfectly, look beautiful, be intuitive and perform really well. This is true for your life as it is true for engineering."
+    },
+    {
+      "id": 2,
+      "date": "January 6, 2017",
+      "title": "2016 in Review",
+      "author":"Pall Nilson",
+      "body": "We live in a world of tradeoffs. Spending some time optimizing a certain function takes your focus and time away from optimizing another. We all want everything to work perfectly, look beautiful, be intuitive and perform really well. This is true for your life as it is true for engineering."
+    },
+    {
+      "id": 3,
+      "date": "February 4, 2016",
+      "title": "Addressable Errors",
+      "author": "Margarett Danback",
+      "body": "We live in a world of tradeoffs. Spending some time optimizing a certain function takes your focus and time away from optimizing another. We all want everything to work perfectly, look beautiful, be intuitive and perform really well. This is true for your life as it is true for engineering."
+    },
+    {
+      "id": 4,
+      "date": "July 13, 2015",
+      "title": "Pure UI",
+      "author": "Elaine Rose",
+      "body": "We live in a world of tradeoffs. Spending some time optimizing a certain function takes your focus and time away from optimizing another. We all want everything to work perfectly, look beautiful, be intuitive and perform really well. This is true for your life as it is true for engineering."
+    },
+    {
+      "id": 5,
+      "date": "February 22, 2015",
+      "title": "ECMAScript 6",
+      "author": "Aditi Lounse",
+      "body": "We live in a world of tradeoffs. Spending some time optimizing a certain function takes your focus and time away from optimizing another. We all want everything to work perfectly, look beautiful, be intuitive and perform really well. This is true for your life as it is true for engineering."
+    },
+    {
+      "id": 6,
+      "date": "November 4, 2014",
+      "title": "7 Principles of Rich Web Applications",
+      "author": "Andjy Bulk",
+      "body": "We live in a world of tradeoffs. Spending some time optimizing a certain function takes your focus and time away from optimizing another. We all want everything to work perfectly, look beautiful, be intuitive and perform really well. This is true for your life as it is true for engineering."
+    }
+  ]
+}
