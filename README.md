@@ -14,6 +14,7 @@ Example of routes:
 - DELETE /blogs/{id}
 4. Use any express view engine to return welcome page to user when accessing any route that server doesn’t
 understand/not configured. This will replace implementation from #2.
+
 *Advanced:
 Use http://nodemon.io/ for development.
 Add simple logging mechanism to write URL and Date info to file per each request (try
