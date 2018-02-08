@@ -1,5 +1,8 @@
 # Blog_NodeExpress
 
+Implement blog system web-server based on Node.js + express framework.
+* To get max point 5 implement advanced part.
+
 Part 1:
 1. Install NodeJS. Use npm to install express framework to your project folder.
 2. Implement and run simple web-server which will always (any route, any request) return JSON of fixed blog article
