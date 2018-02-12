@@ -70,8 +70,8 @@ module.exports = function(app, db) {
   });
 
   app.all('*', function(req, res){
-  	res.send('what???', 404);
-  	// res.render('index', { title: 'Hey', message: 'Hello there!' })
+  //	res.send('what???', 404);
+  	 res.render('index', { title: 'Hey', message: 'Hello there!' })
   });
 
 };
