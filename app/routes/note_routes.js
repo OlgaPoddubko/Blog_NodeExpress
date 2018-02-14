@@ -1,9 +1,12 @@
 let ObjectID = require('mongodb').ObjectID;
+const logger = require('../../utils/logger');
+const fullUrl = require('../../utils/full_url');
 
 module.exports = function(app, db) {
 
 	app.get('/', function (req, res) {
-	  res.render('index', { title: 'Hey', message: 'Hello there!' })
+	  res.render('index', { title: 'Hey', message: 'Hello there!' });
+     logger.info(fullUrl(req));
 	})
 
   app.post('/blogs', (req, res) => {
@@ -12,8 +15,8 @@ module.exports = function(app, db) {
       if (err) { 
         res.send({ 'error': 'An error has occurred' }); 
       } else {
-      	console.log(result.ops[0]); //
         res.send(result.ops[0]);
+         logger.info(fullUrl(req));
       }
     });
   });
@@ -24,8 +27,8 @@ module.exports = function(app, db) {
     	if (err) {
         res.send({'error':'An error has occurred'});
       } else {
-      	console.log(items); //
-        res.send(items);
+      	res.send(items);
+        logger.info(fullUrl(req));
       } 
     });
   });
@@ -37,8 +40,8 @@ module.exports = function(app, db) {
       if (err) {
         res.send({'error':'An error has occurred'});
       } else {
-      	console.log(item); //
         res.send(item);
+        logger.info(fullUrl(req));
       } 
     });
   });
@@ -52,6 +55,7 @@ module.exports = function(app, db) {
           res.send({'error':'An error has occurred'});
       } else {
           res.send(note);
+          logger.info(fullUrl(req));
       } 
     });
   });
@@ -63,8 +67,8 @@ module.exports = function(app, db) {
       if (err) {
         res.send({'error':'An error has occurred'});
       } else {
-      	console.log('Note ' + id + ' deleted!'); //
         res.send('Note ' + id + ' deleted!');
+        logger.info(fullUrl(req));
       } 
     });
   });
@@ -72,6 +76,7 @@ module.exports = function(app, db) {
   app.all('*', function(req, res){
   //	res.send('what???', 404);
   	 res.render('index', { title: 'Hey', message: 'Hello there!' })
+     logger.info(fullUrl(req));
   });
 
 };

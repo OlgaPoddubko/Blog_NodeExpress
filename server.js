@@ -4,9 +4,9 @@ const bodyParser = require('body-parser');
 const db = require('./config/db');
 const app = express();
 const port = 8000;
-var path = require('path');
+const path = require('path');
+//const logger = require('./utils/logger');
 
-// view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
@@ -18,6 +18,7 @@ app.all('*', function(req, res){
   let blog = require('./blog');
   console.log(blog);
   res.send(blog);
+  logger.info(req.headers.host);
 });
 
 */
